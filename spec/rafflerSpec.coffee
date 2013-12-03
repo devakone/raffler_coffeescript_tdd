@@ -30,11 +30,15 @@ describe "Raffler Class",  ->
 		it "should use LocalStorage", ->
 			expect(Entries.localStorage).toBeDefined();
 
+
+
 	describe "Raffler Router", ->
 		Router = new Raffler.Routers.Entries
 
 		it "should define a default route as index", ->
 			expect(Router.routes['']).toBe('index')
+		it "should initialize an internal collection", ->
+			expect(Router.collection).toBeDefined()
 
 		
 

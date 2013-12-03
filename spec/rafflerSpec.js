@@ -37,8 +37,11 @@ describe("Raffler Class", function() {
   return describe("Raffler Router", function() {
     var Router;
     Router = new Raffler.Routers.Entries;
-    return it("should define a default route as index", function() {
+    it("should define a default route as index", function() {
       return expect(Router.routes['']).toBe('index');
+    });
+    return it("should initialize an internal collection", function() {
+      return expect(Router.collection).toBeDefined();
     });
   });
 });
