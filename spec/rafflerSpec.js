@@ -27,7 +27,7 @@ describe("Raffler Class", function() {
     it("should be defined", function() {
       return expect(Raffler.Collections.Entries).toBeDefined();
     });
-    it("should use the right kind of model", function() {
+    it("should use the Entry model", function() {
       return expect(Entries.model).toEqual(Raffler.Models.Entry);
     });
     return it("should use LocalStorage", function() {

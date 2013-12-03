@@ -8,8 +8,7 @@ describe "Raffler Class",  ->
 		it "should define a basic model", ->
 			expect(Raffler.Models).toBeDefined()
 
-		it "should create an Entry model", ->
-			
+		it "should create an Entry model", ->			
 			expect( entry).toBeDefined()
 
 		it "should provide the correct defaults for the attributes on the entry model", ->
@@ -25,7 +24,7 @@ describe "Raffler Class",  ->
 		it "should be defined", ->
 			expect(Raffler.Collections.Entries).toBeDefined()
 
-		it "should use the right kind of model", ->
+		it "should use the Entry model", ->
 			expect(Entries.model).toEqual(Raffler.Models.Entry)
 
 		it "should use LocalStorage", ->
